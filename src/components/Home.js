@@ -36,7 +36,7 @@ function Home({
       </form>
 
       <div className="container row">
-        {recipes.map((recipe, index) => {
+        {(recipes !== null && recipes !== undefined) && recipes.map((recipe, index) => {
           return (
             <RecipeCard
               recipe={recipe}
@@ -46,7 +46,7 @@ function Home({
               // AddToLater={AddToLater}
               // handleAddToLater={handleAddToLater}
             />
-          );
+          ) ;
         })}
       </div>
     </div>
