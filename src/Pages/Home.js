@@ -1,5 +1,5 @@
 import React from "react";
-import RecipeCard from "./RecipeCard";
+import RecipeCard from "../components/RecipeCard";
 
 function Home({
   recipes,
@@ -14,7 +14,7 @@ function Home({
 
   const handleSubmit = (e)=> {
       e.preventDefault()
-      setSearchName(e.target.value)
+      // setSearchName(e.target.value)
   }
   return (
     <div className="container">
@@ -30,9 +30,9 @@ function Home({
           value={searchName}
           onChange={(e) => setSearchName(e.target.value)}
         />
-        <button className="btn btn-secondary my-2 my-sm-0" type="submit">
+        {/* <button className="btn btn-secondary my-2 my-sm-0" type="submit">
           Search
-        </button>
+        </button> */}
       </form>
 
       <div className="container row">

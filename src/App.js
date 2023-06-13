@@ -2,11 +2,13 @@ import React, { useState, useEffect } from "react";
 import "./App.css";
 import Navbar from "./components/Navbar";
 import { Route, Routes } from "react-router-dom";
-import Home from "./components/Home";
 import Favourites from "./components/Favourites";
 import TryLater from "./components/TryLater";
 import AddFav from "./components/AddFav";
 import RemoveFav from "./components/RemoveFav";
+import Home from "./Pages/Home";
+import SingleRecipe from "./Pages/SingleRecipe";
+import About from "./Pages/About";
 // import Later from "./components/Later";
 
 function App() {
@@ -83,7 +85,9 @@ function App() {
             />
           }
         />
-        <Route path="/trylater" element={<TryLater />} />
+        {/* <Route path="/trylater" element={<TryLater />} /> */}
+        <Route path="/about" element={<About />} />
+        <Route path="/recipe/:idMeal" element={<SingleRecipe />} />
         <Route
           path="/favourites"
           element={
@@ -100,6 +104,18 @@ function App() {
 }
 
 export default App;
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

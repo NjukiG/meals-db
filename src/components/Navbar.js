@@ -31,8 +31,8 @@ function Navbar() {
               </li>
 
               <li className="nav-item">
-                <Link to="/trylater" className="nav-link">
-                  Try Later
+                <Link to="/about" className="nav-link">
+                  About
                 </Link>
               </li>
 
