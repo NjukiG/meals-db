@@ -75,9 +75,6 @@ function SingleRecipe() {
   }
   return (
     <div>
-      <br />
-      <br />
-      <br />
       <section className="section cocktail-section">
         <Link to="/" className="btn btn-success">
           Back Home
@@ -87,30 +84,43 @@ function SingleRecipe() {
           <img src={image} alt={name} />
           <div className="drink-info">
             <p>
-              <span className="badge rounded-pill bg-success drink-data">Name:</span>
+              <span className="badge rounded-pill bg-success drink-data">
+                Name:
+              </span>
               {name}
             </p>
             <p>
-              <span className="badge rounded-pill bg-primary drink-data">Category:</span>
+              <span className="badge rounded-pill bg-primary drink-data">
+                Category:
+              </span>
               {category}
             </p>
             <p>
-              <span className="badge rounded-pill bg-success drink-data">Area:</span>
+              <span className="badge rounded-pill bg-success drink-data">
+                Area:
+              </span>
               {area}
             </p>
             <p>
-              <span className="badge rounded-pill bg-warning drink-data">Tags:</span>
+              <span className="badge rounded-pill bg-warning drink-data">
+                Tags:
+              </span>
               {tags}
             </p>
             <p>
-              <span className="badge rounded-pill bg-info drink-data">Instructions:</span>
+              <span className="badge rounded-pill bg-info drink-data">
+                Instructions:
+              </span>
               {instructions}
             </p>
             <p>
-              <span className="badge rounded-pill bg-danger drink-data">Ingredients:</span>
-              {ingredients && ingredients.map((item, index) => {
-                return item ? <span key={index}>{item},</span> : null;
-              })}
+              <span className="badge rounded-pill bg-danger drink-data">
+                Ingredients:
+              </span>
+              {ingredients &&
+                ingredients.map((item, index) => {
+                  return item ? <span key={index}>{item},</span> : null;
+                })}
             </p>
           </div>
         </div>

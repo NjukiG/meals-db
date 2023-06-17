@@ -29,13 +29,15 @@ function RecipeCard({
               href={`https://www.themealdb.com/meal/${idMeal}`}
               target="_blank"
             >
-              Recipe
+              Source
             </a>
           </button>
         </div>
 
         <div>
-          <Link to={`/recipe/${idMeal}`} className="btn btn-info">View Details</Link>
+          <Link to={`/recipe/${idMeal}`} className="btn btn-info">
+            View Details
+          </Link>
         </div>
 
         {/* <div onClick={() => handleAddToLater(recipe)}>
@@ -47,9 +49,3 @@ function RecipeCard({
 }
 
 export default RecipeCard;
-
-
-
-
-
-
