@@ -20,7 +20,6 @@ function Home({
     <div className="container">
       <br />
       <br />
-      <br />
       <h2>All Recipes.</h2>
       <form className="d-flex" onSubmit={handleSubmit}>
         <input
